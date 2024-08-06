@@ -3813,7 +3813,7 @@ input, select, textarea {
 			.wrapper.spotlight .image {
 				/* border-radius: 100%; */
 				margin: 0 3em 2em 0;
-				width: 22em;
+				width: 23em;
 				overflow: hidden;
 				-ms-flex: 1;
 			}
