@@ -2462,7 +2462,12 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
-
+		
+		.image.center {
+			width: 100%;
+			vertical-align: middle;
+			line-height: 100%;
+		}
 /* List */
 
 	ol {
@@ -3224,6 +3229,11 @@ input, select, textarea {
 					padding-right: 1.25em;
 				}
 
+		}
+		#header img {
+			display: block;
+			margin-top: auto;
+			margin-bottom: auto;
 		}
 
 /* Menu */
