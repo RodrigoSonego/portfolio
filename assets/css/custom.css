@@ -2,3 +2,26 @@ iframe.video {
     width: 100%;
     aspect-ratio: 16 / 9;
 }
+
+.image.logo {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.image.logo img {
+    vertical-align: middle;
+    align-self: center;
+}
+
+.title-container {
+    position: relative;
+}
+
+.title {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
