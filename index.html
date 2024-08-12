@@ -14,30 +14,10 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Rodrigo Sônego</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+				<div include-html="modules/header.html"></div>
 
 				<!-- Banner -->
 					<section id="banner">
@@ -56,14 +36,14 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="science.html" class="image"><img src="images/LogoCiencias.png" alt="" /></a>
+									<a href="pages/science.html" class="image"><img src="images/LogoCiencias.png" alt="" /></a>
 									<div class="content">
 										<h2 class="major">AR Science</h2>
 										<p>AR Science is an Augmented Reality mobile app that is used in tandem with a science textbook to illustrate various 3D scenes that
 											auxiliate the learning of students in middle school. The user points their phone camera at an "AR Code" and the 3D visualization
 											appears. Published on Android and IoS along with four other similar apps that tackles different contents.
 										</p>
-										<a href="science.html" class="special">Learn more</a>
+										<a href="pages/science.html" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -157,6 +137,10 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/includeHtml.js"></script>
+			<script>
+				includeHTML();
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
