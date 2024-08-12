@@ -25,3 +25,14 @@ iframe.video {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.gallery-container{
+    margin: auto;
+    text-align: center;
+}
+
+.gallery{
+    margin: 0.4%;
+    width: 48%;
+    aspect-ratio: 16 / 9;
+}
