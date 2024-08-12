@@ -24,4 +24,5 @@ function includeHTML() {
             return;
         }
     }
+    console.log(window.location['pathname']);
 }
