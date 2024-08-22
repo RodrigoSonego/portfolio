@@ -60,3 +60,11 @@ iframe.video {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (max-width: 736px) {
+
+        .features article .image img {
+            max-height: calc(245px - 4em);
+        }
+
+}
