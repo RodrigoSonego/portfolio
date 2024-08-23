@@ -102,21 +102,38 @@
 					</section>
 				</div>
 			</div>
-		</section>
 
+			
+		</section>
+		
 		<div include-html="../modules/footer.html"></div>
 	</div>
+	<!-- The Modal -->
+	<div id="modal" class="modal">
+		<!-- The Close Button -->
+		<a href="#" class="modal-close">Close</a>
+
+		<!-- Modal Content (The Image) -->
+		 <div class="modal-content">
+			 <img id="modalImg">
+		 </div>
+
+		<!-- Modal Caption (Image Text) -->
+		<div id="caption"></div>
+	</div>
+
+	
 	<!-- Scripts -->
-	<script src="../assets/js/includeHtml.js"></script>
-	<script>
-		includeHTML();
-	</script>
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/jquery.scrollex.min.js"></script>
-	<script src="../assets/js/browser.min.js"></script>
-	<script src="../assets/js/breakpoints.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<script src="../assets/js/main.js"></script>
+	<script src="/assets/js/includeHtml.js"></script>
+	<script> includeHTML(); </script>
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/jquery.scrollex.min.js"></script>
+	<script src="/assets/js/browser.min.js"></script>
+	<script src="/assets/js/breakpoints.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<script src="/assets/js/main.js"></script>
+	<script src="/assets/js/modalImage.js"></script>
+	<script> setupGalleryModal(); </script>
 
 </body>
 
