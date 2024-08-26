@@ -52,6 +52,14 @@ iframe.video {
     padding: 5em 0 1em 0;
 }
 
+@media screen and (max-width: 980px) {
+    #footer .inner {
+        padding: 3em 3em 1em 3em;
+        display: block;
+        width: 100%;
+    }
+}
+
 .features article .image {
     text-align: center;
 }
@@ -107,7 +115,7 @@ iframe.video {
     background-image: url("images/close.svg");
     background-position: 75% 25%;
     background-repeat: no-repeat;
-    background-size: 2em 2em;
+    background-size: 5em 5em;
     border: 0;
     content: '';
     display: block;
@@ -142,10 +150,10 @@ iframe.video {
 }
 
 body.blur #page-wrapper {
-    -moz-filter:    blur(3px);
-    -webkit-filter: blur(3px);
-    -ms-filter:     blur(3px);
-    filter:         blur(3px);
+    -moz-filter:    blur(5px);
+    -webkit-filter: blur(5px);
+    -ms-filter:     blur(5px);
+    filter:         blur(5px);
 }
 
 body.blur {

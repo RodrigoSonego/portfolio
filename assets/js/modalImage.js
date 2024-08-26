@@ -4,7 +4,6 @@ function setupGalleryModal() {
 
     // Get the image and insert it inside the modal - use its "alt" text as a caption
     let modalImg = document.getElementById("modalImg");
-    let header = document.getElementById("header");
     // var captionText = document.getElementById("caption");
 
     let imgs = document.getElementsByClassName("gallery");
@@ -28,6 +27,17 @@ function setupGalleryModal() {
         event.stopImmediatePropagation();
 
         modal.style.display = "none";
-        document.body.className -= " blur"
+        document.body.className -= " blur"   
+    }
+
+    modalImg.onclick = function (event) {
+        event.stopPropagation();
+    }
+
+    modal.onclick = function (event) {
+        event.stopPropagation();
+
+        modal.style.display = "none";
+        document.body.className -= " blur";
     }
 }
