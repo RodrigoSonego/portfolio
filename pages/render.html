@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Render Engine - Rodrigo Sonego</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="stylesheet" href="../assets/css/custom.css">
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<div include-html="../modules/header.html"></div>
+
+		<!-- Wrapper -->
+		<section id="wrapper">
+			<header>
+				<div class="inner">
+					<div class="row">
+						<div class="col-3">
+							<span class="image fit logo"><img src="/images/render.png" alt="" /></span>
+						</div>
+						<div class="col-6 title-container">
+							<div class="inner title" aria-hidden="true">
+								<h2>C++ Render Engine</h2>
+								<p>Graphics Engine made in c++</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- Content -->
+			<div class="wrapper">
+				<div class="inner">
+
+					<section>
+						<h2 class="major">Summary</h3>
+							<p>
+								A simple engine that uses OpenGL to render 2D sprites and animate from spritesheets.
+								It also has a side-scroller demo game (only visuals and inputs working) inspired by Xenon 2000 to show the rendering capabilities.
+								There is also a branch that handles the loading, texture mapping and rendering of 3D objects.
+							</p>
+							<h2 class="major">Responsibilities</h2>
+							<ul>
+								<li>Load 2D sprites and 3D .obj files</li>
+								<li>Developing the demo "game"</li>
+								<li>Developing camera and shaders</li>
+								<li>Animating sprites from spritesheet</li>
+								<li>Mapping textures to 3D objects</li>
+							</ul>
+
+							<h2 class="major">Technologies Used</h2>
+							<ul>
+								<li>C++</li>
+								<li>OpenGL</li>
+								<li>Git</li>
+							</ul>
+
+							<h2 class="major">Publishing</h2>
+							<div class="row">
+								<!-- <div class="col-3"><span class="image fit"><a href="https://fufumiga.itch.io/dicest-dungeon"
+											target="_blank"><img src="../images/itch.png" alt="" /> </a> </span>
+								</div> -->
+								<div class="col-3"><span class="image fit"><a
+											href="https://github.com/RodrigoSonego/opengl-cpp" target="_blank"><img
+												src="../images/github_avail.png" alt="" /> </a> </span>
+								</div>
+							</div>
+							<h2 class="major">Gallery</h2>
+							<section class="features">
+								<div class="gallery-container">
+									<img class="image gallery" src="/images/render/render_1.png">
+									<img class="image gallery" src="/images/render/render_2.png">
+									<img class="image gallery" src="/images/render/render_4.png">
+									<img class="image gallery" src="/images/render/render_3.png">
+								</div>
+
+							</section>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<div include-html="../modules/footer.html"></div>
+	</div>
+
+	<div id="modal" class="modal">
+		<a href="#" class="modal-close">Close</a>
+
+		<!-- Modal Content (The Image) -->
+		 <div class="modal-content">
+			 <img id="modalImg">
+		 </div>
+
+		<!-- Modal Caption (unused for now) -->
+		<div id="caption"></div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/includeHtml.js"></script>
+	<script>
+		includeHTML();
+	</script>
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+	<script src="/assets/js/modalImage.js"></script>
+	<script> setupGalleryModal(); </script>
+
+</body>
+
+</html>
