@@ -39,16 +39,21 @@ function updateWithLanguage(language) {
 function setupLanguageSelector(lang) {
 	const selector = document.getElementById("languageSelect");
 	selector.value = lang
-
+	
 	selector.onchange = () => {
 		updateWithLanguage(selector.value);
 		setLanguage(selector.value);
-	}
 
+		console.log("trocou pra " + selector.value);
+	}
+	
 	selector.className -= " hide";
 }
 
 $(document).ready(function() {
 	const lang = getLanguage();
+
+	updateWithLanguage(lang);
+
 	setupLanguageSelector(lang);
 })

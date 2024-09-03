@@ -1,4 +1,14 @@
 {
     "header-title": "Olá! Me chamo Rodrigo Sônego",
-    "header-desc": "Sou um desenvolvedor de jogos com experiência em Unity. Trabalho na indústria desde 2021 e participei de algumas game jams e projetos pessoais. Confira meu trabalho abaixo!"
+    "header-desc": "Sou um desenvolvedor de jogos com experiência em Unity. Trabalho na indústria desde 2021 e participei de algumas game jams e projetos pessoais. Confira meu trabalho abaixo!",
+    "contact": "Entre em contato",
+    "other": "Outros Projetos",
+    "science-title": "Ciência RA",
+    "science-desc": "Ciência RA é um aplicativo de realidade aumentada que é usado em conjunto com um livro escolar de Ciências para ilustrar várias cenas em 3D que auxiliam o aprendizado de estudantes do ensino fundamental. O usuário aponta a câmera para um \"AR Code\" e a visualização 3D aparece. Publicado no Android e IoS junto de quatro outros apps similares que trabalham assuntos diferentes.",
+    "learn": "Veja Mais",
+    "unfishing": "Jogo feito para a GMTK Game Jam 2023, com o tema \"Roles Reversed\". Nesse jogo você joga com um peixe tentando \"despescar\" comida dos anzóis que estão abaixo d'água. Assim como nas mecânicas de minigames de pesca de outros jogos, você tem que resolver minigames para conseguir despescar as minhocas dos anzóis, trazendo elas para casa para alimentar sua família.",
+    "dicest": "Jogo feito para a GMTK Game Jam 2022, com o tema \"Roll of the Dice\". Esse jogo foi fortemente inspirado por jogos como Darkest Dungeon, com uma estrutura de combate parecida. O jogo se passa em um cassino onde você ataca os inimigos jogando dados neles e o dano é o resultado da rolagem!",
+    "fg-desc": "Protótipo de jogo de luta feito na Unity. Usa Python para implementar o algoritmo Deep-Q Learning para fazer com que a IA aprenda uma maneira otimizada de jogar contra seu oponente.",
+    "render-title": "C++ Render Engine",
+    "render-desc": "Engine feita em C++ que renderiza modelos 3D, sprites 2D e animações baseadas em spritesheet."
 }

@@ -1,4 +1,15 @@
 {
     "header-title": "Hello! I'm Rodrigo Sônego",
-    "header-desc": "I'M A GAME DEVELOPER WITH EXPERIENCE IN THE UNITY ENGINE. I HAVE WORKED IN THE INDUSTRY SINCE 2021 AND TOOK PART IN A FEW GAME JAMS AND PERSONAL PROJECTS. CHECK OUT MY WORK BELOW!"
+    "header-desc": "I'M A GAME DEVELOPER WITH EXPERIENCE IN THE UNITY ENGINE. I HAVE WORKED IN THE INDUSTRY SINCE 2021 AND TOOK PART IN A FEW GAME JAMS AND PERSONAL PROJECTS. CHECK OUT MY WORK BELOW!",
+    "contact": "Get in Touch",
+    "other": "Other Projects",
+    "science-title": "AR Science",
+    "science-desc": "AR Science is an Augmented Reality mobile app that is used in tandem with a science textbook to illustrate various 3D scenes that auxiliate the learning of students in middle school. The user points their phone camera at an \"AR Code\" and the 3D visualization appears. Published on Android and IoS along with four other similar apps that tackles different contents.",
+    "learn": "Learn More",
+    "unfishing": "Game made for the GMTK Game Jam 2023, with the theme \"Roles Reversed\". In this game, you play as a fish trying to \"unfish\" food from the hooks peeking underwater. Just as fishing mechanics in other games, you have to solve minigames in order to unfish the worms from the hooks, bringing them home to feed your family!",
+    "dicest": "Game made for the GMTK Game Jam 2022, with the theme \"Roll of the Dice\". This game is heavily inspired by the likes of Darkest Dungeon, with a similar combat structure. The setting is a casino in which you attack your enemies by throwing dice at them, and the damage will be the roll result!",
+    "fg-desc": "Fighting Game prototype made in Unity. Uses python to implement the Deep Q-Learning algorithm to make the AI learn the optimal way to play against its opponent.",
+    "render-title": "C++ Render Engine",
+    "render-desc": "Engine made in C++ that renders 3D models, textures, 2D sprites and animations on spritesheets."
+
 }
