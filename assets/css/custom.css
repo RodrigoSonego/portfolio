@@ -159,3 +159,23 @@ body.blur #page-wrapper {
 body.blur {
     overflow: hidden;
 }
+
+
+#languageSelect {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+
+    padding-right: 16px;
+    padding-left: 16px;
+
+    vertical-align: middle;
+    height: 100%;
+
+    border: none;
+}
+
+#languageSelect:hover {
+    cursor: pointer;
+}

@@ -1,9 +1,7 @@
-function getLanguageDict() {
-	(localStorage.getItem('language') == null) ? setLanguage('en') : false;
-
+function getLanguageDict(language) {
 	let langFile;
 	$.ajax({
-		url: '/assets/lang/' + localStorage.getItem('language') + ".json",
+		url: '/assets/lang/' + language + ".json",
 		dataType: 'json', async: false,
 		success: function(file) {langFile = file}
 	})
@@ -11,17 +9,25 @@ function getLanguageDict() {
 	return langFile;
 }
 
-/**
- * @param {string} language 
- */
+function getLanguage() {
+	const language = localStorage.getItem("language");
+
+	if (language == null) {
+		setLanguage('en');
+		return 'en';
+	}
+
+	return language;
+}
+
 function setLanguage(language) {
 	localStorage.setItem('language', language)
 }
 
-function updateWithLanguage() {
+function updateWithLanguage(language) {
 	const translatable = document.querySelectorAll('[translate]')
 
-	const lang = getLanguageDict();
+	const lang = getLanguageDict(language);
 
 	for (const element of translatable) {
 		let tag = element.getAttribute("translate");
@@ -30,11 +36,19 @@ function updateWithLanguage() {
 	}
 }
 
-$(document).ready(function(){
-	updateWithLanguage();
+function setupLanguageSelector(lang) {
+	const selector = document.getElementById("languageSelect");
+	selector.value = lang
 
-	document.onkeydown = function(event){
-		if(event.key == "p") { setLanguage('pt'); updateWithLanguage(); }
-		if(event.key == "o") { setLanguage('en'); updateWithLanguage(); }
+	selector.onchange = () => {
+		updateWithLanguage(selector.value);
+		setLanguage(selector.value);
 	}
+
+	selector.className -= " hide";
+}
+
+$(document).ready(function() {
+	const lang = getLanguage();
+	setupLanguageSelector(lang);
 })
