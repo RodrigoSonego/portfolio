@@ -12,6 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="../assets/css/custom.css">
+	<link rel="preload" href="/assets/lang/en.json" as="fetch" type="application/json" crossorigin="anonymous"/>
+	<link rel="preload" href="/assets/lang/pt.json" as="fetch" type="application/json" crossorigin="anonymous"/>
 	<noscript>
 		<link rel="stylesheet" href="../assets/css/noscript.css" />
 	</noscript>
@@ -47,27 +49,24 @@
 				<div class="inner">
 
 					<section>
-						<h2 class="major">Summary</h3>
-							<p>
+						<h2 translate="summary" class="major">Summary</h3>
+							<p translate="rl-sum-1">
 								This is a project done as part of my bachelor's thesis on Computer Science.
                                 The idea was to make a simple fighting game prototype and develop an AI that can learn how to play with the player through Deep Reinforcement Learning.
 							</p>
-                            <p>
-                                In order to link Python with Unity, or rather, with C#, the Python.NET library was used, allowing to call Python from within C#.
-                            </p>
-							<p>
+							<p translate="rl-sum-2">
 								As it stands now the prototype consists of a really basic fighting game with a light and heavy attack, and a block button similar to Mortal Kombat.
 								It can be played as Player vs RL-AI or it can be done as RL-AI vs regular AI.
 							</p>
-							<h2 class="major">Responsibilities</h2>
+							<h2 translate="respon" class="major">Responsibilities</h2>
 							<ul>
-								<li>Developing the fighting game mechanics</li>
-								<li>Determining AI parameters and network config</li>
-								<li>Adapting the learning algorithm</li>
-								<li>Bug fixing</li>
+								<li translate="respon-fg">Developing the fighting game mechanics</li>
+								<li translate="respon-ai-net">Determining AI parameters and network config</li>
+								<li translate="respon-learn">Adapting the learning algorithm</li>
+								<li translate="respon-bug">Bug fixing</li>
 							</ul>
 
-							<h2 class="major">Technologies Used</h2>
+							<h2 translate="tech" class="major">Technologies Used</h2>
 							<ul>
 								<li>Unity Engine</li>
 								<li>Git</li>
@@ -75,14 +74,14 @@
                                 <li>Python.NET</li>
 							</ul>
 
-							<h2 class="major">Source Code</h2>
+							<h2 translate="source" class="major">Source Code</h2>
 							<div class="row">
 								<div class="col-3"><span class="image fit"><a
 											href="https://github.com/RodrigoSonego/fg-prototype-AI" target="_blank"><img
 												src="../images/github_avail.png" alt="" /> </a> </span>
 								</div>
 							</div>
-							<h2 class="major">Gallery</h2>
+							<h2 translate="gallery" class="major">Gallery</h2>
 							<section class="features">
 								<div class="gallery-container">
 									<img class="image gallery" src="/images/rl/rl_1.png">
@@ -114,10 +113,8 @@
 
 	<!-- Scripts -->
 	<script src="../assets/js/includeHtml.js"></script>
-	<script>
-		includeHTML();
-	</script>
 	<script src="../assets/js/jquery.min.js"></script>
+	<script src="/assets/js/langHandler.js" type="module"></script>
 	<script src="../assets/js/jquery.scrollex.min.js"></script>
 	<script src="../assets/js/browser.min.js"></script>
 	<script src="../assets/js/breakpoints.min.js"></script>
