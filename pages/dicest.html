@@ -12,6 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="../assets/css/custom.css">
+	<link rel="preload" href="/assets/lang/en.json" as="fetch" type="application/json" crossorigin="anonymous"/>
+	<link rel="preload" href="/assets/lang/pt.json" as="fetch" type="application/json" crossorigin="anonymous"/>
 	<noscript>
 		<link rel="stylesheet" href="../assets/css/noscript.css" />
 	</noscript>
@@ -35,7 +37,7 @@
 						<div class="col-6 title-container">
 							<div class="inner title" aria-hidden="true">
 								<h2>Dicest Dungeon</h2>
-								<p>Turn-based game for GMTK Jam 2022</p>
+								<p translate="dice-subtitle">Turn-based game for GMTK Jam 2022</p>
 							</div>
 						</div>
 					</div>
@@ -47,27 +49,27 @@
 				<div class="inner">
 
 					<section>
-						<h2 class="major">Summary</h3>
-							<p>
+						<h2 translate="summary" class="major">Summary</h3>
+							<p translate="dice-sum-1">
 								Dicest Dungeon is a game heavily inspired by the likes of Darkest Dungeon, where you walk through a dungeon (or, in this case, a casino) and fight monsters in turn-based battles.
 								The game has you walking through a casino in order to take down the boss. In this casino, the battles are a bet, and your only weapon is your dice (which you literally throw at your enemy)!
 							</p>
-							<h2 class="major">Responsibilities</h2>
+							<h2 translate="respon" class="major">Responsibilities</h2>
 							<ul>
 								<li>Game Design</li>
-								<li>Developing the turn-based combat</li>
-								<li>Developing the camera and character movement</li>
-								<li>Ensuring UI responsiveness</li>
-								<li>Bug fixing</li>
+								<li translate="respon-turn">Developing the turn-based combat</li>
+								<li translate="respon-camera-mov">Developing the camera and character movement</li>
+								<li translate="respon-ui-responsive">Ensuring UI responsiveness</li>
+								<li translate="respon-bug">Bug fixing</li>
 							</ul>
 
-							<h2 class="major">Technologies Used</h2>
+							<h2 translate="tech" class="major">Technologies Used</h2>
 							<ul>
 								<li>Unity Engine</li>
 								<li>Git</li>
 							</ul>
 
-							<h2 class="major">Publishing</h2>
+							<h2 translate="pub" class="major">Publishing</h2>
 							<div class="row">
 								<div class="col-3"><span class="image fit"><a href="https://fufumiga.itch.io/dicest-dungeon"
 											target="_blank"><img src="../images/itch.png" alt="" /> </a> </span>
@@ -77,7 +79,7 @@
 												src="../images/github_avail.png" alt="" /> </a> </span>
 								</div>
 							</div>
-							<h2 class="major">Gallery</h2>
+							<h2 translate="gallery" class="major">Gallery</h2>
 							<section class="features">
 								<div class="gallery-container">
 									<img class="image gallery" src="/images/dicest/dicest_1.png">
@@ -112,12 +114,13 @@
 	<script>
 		includeHTML();
 	</script>
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/jquery.scrollex.min.js"></script>
-	<script src="../assets/js/browser.min.js"></script>
-	<script src="../assets/js/breakpoints.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<script src="../assets/js/main.js"></script>
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/jquery.scrollex.min.js"></script>
+	<script src="/assets/js/langHandler.js" type="module"></script>
+	<script src="/assets/js/browser.min.js"></script>
+	<script src="/assets/js/breakpoints.min.js"></script>
+	<script src="/assets/js/util.js"></script>
+	<script src="/assets/js/main.js"></script>
 	<script src="/assets/js/modalImage.js"></script>
 	<script> setupGalleryModal(); </script>
 
