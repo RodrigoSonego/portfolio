@@ -57,8 +57,6 @@ function setupLanguageSelector(lang) {
 	const currentLangDict = await parseToMap(`/assets/lang/${lang}.ini`);
 	languages.set(lang, currentLangDict);
 	
-	console.log(currentLangDict);
-	
 	const otherLang = lang == 'en' ? 'pt' : 'en';
 	parseToMap(`/assets/lang/${otherLang}.ini`).then(map => languages.set(otherLang, map));
 	// fetch(`/assets/lang/${otherLang}.json`).then(response => response.json())
