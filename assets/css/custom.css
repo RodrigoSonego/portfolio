@@ -94,7 +94,7 @@ iframe.video {
     /* overflow: auto; */
     /* background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9); */
-    
+
     align-items: center;
     justify-content: center;
 }
@@ -132,6 +132,7 @@ iframe.video {
 .close:hover {
     cursor: pointer;
 }
+
 .close:focus {
     color: #bbb;
     text-decoration: none;
@@ -150,10 +151,10 @@ iframe.video {
 }
 
 body.blur #page-wrapper {
-    -moz-filter:    blur(5px);
+    -moz-filter: blur(5px);
     -webkit-filter: blur(5px);
-    -ms-filter:     blur(5px);
-    filter:         blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
 
 body.blur {
@@ -210,4 +211,55 @@ body.blur {
         width: 100%;
         padding: 0 2.5em 2em 2.5em;
     }
+}
+
+#game-banner {
+    padding: 4em 0 0 0;
+}
+
+#game-banner .inner {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    padding: 3em 0 1em 0;
+    margin: 0 auto;
+    width: 55em;
+}
+
+#game-banner .image {
+    margin: 0 3em 2em 0;
+    width: 23em;
+    overflow: hidden;
+}
+
+#game-banner .image img {
+    width: 100%;
+}
+
+#game-banner h2.major {
+    font-size: 2em;
+    border-bottom: solid 2.5px rgba(255, 255, 255, 0.125);
+}
+
+#game-banner .content {
+    width: 100%;
+}
+
+#game-banner p {
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    text-transform: uppercase;
 }
