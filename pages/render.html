@@ -12,6 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="../assets/css/custom.css">
+	<link rel="preload" href="/assets/lang/en.json" as="fetch" type="application/json" crossorigin="anonymous"/>
+	<link rel="preload" href="/assets/lang/pt.json" as="fetch" type="application/json" crossorigin="anonymous"/>
 	<noscript>
 		<link rel="stylesheet" href="../assets/css/noscript.css" />
 	</noscript>
@@ -35,7 +37,7 @@
 						<div class="col-6 title-container">
 							<div class="inner title" aria-hidden="true">
 								<h2>C++ Render Engine</h2>
-								<p>Graphics Engine made in c++</p>
+								<p translate="render-subtitle">Graphics Engine made in c++</p>
 							</div>
 						</div>
 					</div>
@@ -47,29 +49,29 @@
 				<div class="inner">
 
 					<section>
-						<h2 class="major">Summary</h3>
-							<p>
+						<h2 translate="summary" class="major">Summary</h3>
+							<p translate="render-sum">
 								A simple engine that uses OpenGL to render 2D sprites and animate from spritesheets.
 								It also has a side-scroller demo game (only visuals and inputs working) inspired by Xenon 2000 to show the rendering capabilities.
 								There is also a branch that handles the loading, texture mapping and rendering of 3D objects.
 							</p>
-							<h2 class="major">Responsibilities</h2>
+							<h2 translate="respon" class="major">Responsibilities</h2>
 							<ul>
-								<li>Load 2D sprites and 3D .obj files</li>
-								<li>Developing the demo "game"</li>
-								<li>Developing camera and shaders</li>
-								<li>Animating sprites from spritesheet</li>
-								<li>Mapping textures to 3D objects</li>
+								<li translate="respon-load-obj">Load 2D sprites and 3D .obj files</li>
+								<li translate="respon-demo">Developing the demo "game"</li>
+								<li translate="respon-cam-shaders">Developing camera and shaders</li>
+								<li translate="respon-spritesheet">Animating sprites from spritesheet</li>
+								<li translate="respon-map">Mapping textures to 3D objects</li>
 							</ul>
 
-							<h2 class="major">Technologies Used</h2>
+							<h2 translate="tech" class="major">Technologies Used</h2>
 							<ul>
 								<li>C++</li>
 								<li>OpenGL</li>
 								<li>Git</li>
 							</ul>
 
-							<h2 class="major">Publishing</h2>
+							<h2 translate="source" class="major">Source Code</h2>
 							<div class="row">
 								<!-- <div class="col-3"><span class="image fit"><a href="https://fufumiga.itch.io/dicest-dungeon"
 											target="_blank"><img src="../images/itch.png" alt="" /> </a> </span>
@@ -79,7 +81,7 @@
 												src="../images/github_avail.png" alt="" /> </a> </span>
 								</div>
 							</div>
-							<h2 class="major">Gallery</h2>
+							<h2 translate="gallery" class="major">Gallery</h2>
 							<section class="features">
 								<div class="gallery-container">
 									<img class="image gallery" src="/images/render/render_1.png">
@@ -111,10 +113,8 @@
 
 	<!-- Scripts -->
 	<script src="../assets/js/includeHtml.js"></script>
-	<script>
-		includeHTML();
-	</script>
 	<script src="../assets/js/jquery.min.js"></script>
+	<script src="/assets/js/langHandler.js" type="module"></script>
 	<script src="../assets/js/jquery.scrollex.min.js"></script>
 	<script src="../assets/js/browser.min.js"></script>
 	<script src="../assets/js/breakpoints.min.js"></script>
