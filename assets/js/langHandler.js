@@ -73,9 +73,9 @@ function setupLanguageSelector(lang) {
 	
 	
 $(window).on('load', function () {
- 	const lang = getLanguage();
-
-	updateWithLanguage(lang);
-
- 	setupLanguageSelector(lang);
+ 	window.setTimeout(function() {
+		const lang = getLanguage();
+		updateWithLanguage(lang);
+		setupLanguageSelector(lang);
+	}, 100)
 })
