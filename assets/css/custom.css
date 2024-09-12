@@ -379,3 +379,10 @@ ul.actions:not(.fixed) li:only-child {
         padding-left: 0;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .gallery {
+        width: 100%;
+        margin: 0 0 2em 0 !important;
+    }
+}
