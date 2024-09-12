@@ -383,6 +383,6 @@ ul.actions:not(.fixed) li:only-child {
 @media screen and (max-width: 480px) {
     .gallery {
         width: 100%;
-        margin: 0 0 2em 0 !important;
+        margin: 0 0 0.5em 0 !important;
     }
 }
