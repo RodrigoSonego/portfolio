@@ -331,12 +331,12 @@ ul.actions:not(.fixed) {
         -ms-flex-direction: column;
         flex-direction: row;
         margin-left: 0;
-        width: 100% !important;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 480px) {
-    ul.actions:not(.fixed) li {
+    ul.actions:not(.fixed) li:not(:only-child) {
         -moz-flex-grow: 1;
         -webkit-flex-grow: 1;
         -ms-flex-grow: 1;
@@ -352,7 +352,7 @@ ul.actions:not(.fixed) {
 }
 
 @media screen and (max-width: 480px) {
-    ul.actions:not(.fixed) li > * {
+    ul.actions:not(.fixed) li:not(:only-child) > * {
         width: 100%;
     }
 }
@@ -360,5 +360,22 @@ ul.actions:not(.fixed) {
 @media screen and (max-width: 480px) {
     ul.actions:not(.fixed) li:nth-child(2)  {
         margin-left: 1em;
+    }
+}
+
+ul.actions:not(.fixed) li:only-child {
+    width: 50%;
+}
+
+@media screen and (max-width: 736px) {
+    ul.actions:not(.fixed) li:only-child {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    ul.actions:not(.fixed) li:only-child {
+        width: 70% !important;
+        padding-left: 0;
     }
 }

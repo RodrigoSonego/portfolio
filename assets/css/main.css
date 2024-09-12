@@ -2601,7 +2601,7 @@ input, select, textarea {
 				width: 100% !important;
 			}
 
-				ul.actions:not(.fixed) li {
+				ul.actions:not(.fixed) li:not(:only-child) {
 					-moz-flex-grow: 1;
 					-webkit-flex-grow: 1;
 					-ms-flex-grow: 1;
@@ -2615,9 +2615,9 @@ input, select, textarea {
 					width: 100%;
 				}
 
-					ul.actions:not(.fixed) li > * {
+					/* ul.actions:not(.fixed) li > * {
 						width: 100%;
-					}
+					} */
 
 					ul.actions:not(.fixed) li:first-child {
 						padding-top: 0;
