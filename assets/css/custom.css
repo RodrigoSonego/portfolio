@@ -212,6 +212,12 @@ body.blur {
         padding: 0 2.5em 2em 2.5em;
     }
 }
+@media screen and (max-width: 1280px) {
+    #banner {
+        padding: 7em 0 8.25em 0;
+    }
+}
+
 
 #game-banner {
     padding: 4em 0 0 0;
@@ -237,13 +243,26 @@ body.blur {
 }
 
 #game-banner .image {
-    margin: 0 3em 2em 0;
+    margin: auto 3em auto 0;
     width: 23em;
     overflow: hidden;
 }
 
 #game-banner .image img {
     width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    #game-banner .image {
+        width: 32em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #game-banner .image {
+        width: 19em;
+        margin-bottom: 3em;
+    }
 }
 
 #game-banner h2.major {
@@ -253,6 +272,30 @@ body.blur {
 
 #game-banner .content {
     width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    #game-banner .inner {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #game-banner .inner {
+        -moz-align-items: -moz-flex-start;
+        -webkit-align-items: -webkit-flex-start;
+        -ms-align-items: -ms-flex-start;
+        align-items: flex-start;
+
+        padding: 2em 2em 0.1em 2em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #game-banner .inner {
+        padding: 3em 3em 1em 3em;
+        width: 100%;
+    }
 }
 
 #game-banner p {
