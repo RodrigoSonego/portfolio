@@ -12,8 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="../assets/css/custom.css">
-	<link rel="preload" href="/assets/lang/en.ini" as="fetch" type="application/json" crossorigin="anonymous"/>
-	<link rel="preload" href="/assets/lang/pt.ini" as="fetch" type="application/json" crossorigin="anonymous"/>
+	<link rel="preload" href="/assets/lang/en.ini" as="fetch" type="application/json" crossorigin="anonymous" />
+	<link rel="preload" href="/assets/lang/pt.ini" as="fetch" type="application/json" crossorigin="anonymous" />
 	<noscript>
 		<link rel="stylesheet" href="../assets/css/noscript.css" />
 	</noscript>
@@ -28,21 +28,20 @@
 
 		<!-- Wrapper -->
 		<section id="wrapper">
-			<header>
+
+			<section id="game-banner">
+
 				<div class="inner">
-					<div class="row">
-						<div class="col-3">
-							<span class="image fit logo"><img src="../images/rl.png" alt="" /></span>
-						</div>
-						<div class="col-6 title-container">
-							<div class="inner title" aria-hidden="true">
-								<h2>Fighting Game RL</h2>
-								<!-- <p>Turn-based game for GMTK Jam 2022</p> -->
-							</div>
-						</div>
+
+					<span class="image"><img src="../images/rl.png" alt="" /></span>
+					<div class="content">
+						<h2 class="major">Fighting Game RL</h2>
+						<!-- <p>Turn-based game for GMTK Jam 2022</p> -->
 					</div>
+
 				</div>
-			</header>
+
+			</section>
 
 			<!-- Content -->
 			<div class="wrapper">
@@ -52,10 +51,12 @@
 						<h2 translate="summary" class="major">Summary</h3>
 							<p translate="rl-sum-1">
 								This is a project done as part of my bachelor's thesis on Computer Science.
-                                The idea was to make a simple fighting game prototype and develop an AI that can learn how to play with the player through Deep Reinforcement Learning.
+								The idea was to make a simple fighting game prototype and develop an AI that can learn
+								how to play with the player through Deep Reinforcement Learning.
 							</p>
 							<p translate="rl-sum-2">
-								As it stands now the prototype consists of a really basic fighting game with a light and heavy attack, and a block button similar to Mortal Kombat.
+								As it stands now the prototype consists of a really basic fighting game with a light and
+								heavy attack, and a block button similar to Mortal Kombat.
 								It can be played as Player vs RL-AI or it can be done as RL-AI vs regular AI.
 							</p>
 							<h2 translate="respon" class="major">Responsibilities</h2>
@@ -70,17 +71,19 @@
 							<ul>
 								<li>Unity Engine</li>
 								<li>Git</li>
-                                <li>Python</li>
-                                <li>Python.NET</li>
+								<li>Python</li>
+								<li>Python.NET</li>
 							</ul>
 
 							<h2 translate="source" class="major">Source Code</h2>
-							<div class="row">
-								<div class="col-3"><span class="image fit"><a
-											href="https://github.com/RodrigoSonego/fg-prototype-AI" target="_blank"><img
-												src="../images/github_avail.png" alt="" /> </a> </span>
-								</div>
-							</div>
+							<ul class="actions">
+								<li>
+									<a class="image fit" href="https://github.com/RodrigoSonego/fg-prototype-AI" target="_blank">
+										<img src="../images/github_avail.png" alt="" />
+									</a>
+								</li>
+							</ul>
+
 							<h2 translate="gallery" class="major">Gallery</h2>
 							<section class="features">
 								<div class="gallery-container">
@@ -103,9 +106,9 @@
 		<a href="#" class="modal-close">Close</a>
 
 		<!-- Modal Content (The Image) -->
-		 <div class="modal-content">
-			 <img id="modalImg">
-		 </div>
+		<div class="modal-content">
+			<img id="modalImg">
+		</div>
 
 		<!-- Modal Caption (unused for now) -->
 		<div id="caption"></div>

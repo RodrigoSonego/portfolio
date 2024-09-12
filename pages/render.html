@@ -12,8 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="../assets/css/custom.css">
-	<link rel="preload" href="/assets/lang/en.ini" as="fetch" type="application/json" crossorigin="anonymous"/>
-	<link rel="preload" href="/assets/lang/pt.ini" as="fetch" type="application/json" crossorigin="anonymous"/>
+	<link rel="preload" href="/assets/lang/en.ini" as="fetch" type="application/json" crossorigin="anonymous" />
+	<link rel="preload" href="/assets/lang/pt.ini" as="fetch" type="application/json" crossorigin="anonymous" />
 	<noscript>
 		<link rel="stylesheet" href="../assets/css/noscript.css" />
 	</noscript>
@@ -28,21 +28,17 @@
 
 		<!-- Wrapper -->
 		<section id="wrapper">
-			<header>
+			<section id="game-banner">
+
 				<div class="inner">
-					<div class="row">
-						<div class="col-3">
-							<span class="image fit logo"><img src="/images/render.png" alt="" /></span>
-						</div>
-						<div class="col-6 title-container">
-							<div class="inner title" aria-hidden="true">
-								<h2>C++ Render Engine</h2>
-								<p translate="render-subtitle">Graphics Engine made in c++</p>
-							</div>
-						</div>
+					<span class="image"><img src="/images/render.png" alt="" /></span>
+					<div class="content">
+						<h2 class="major">C++ Render Engine</h2>
+						<p translate="render-subtitle">Graphics Engine made in c++</p>
 					</div>
 				</div>
-			</header>
+
+			</section>
 
 			<!-- Content -->
 			<div class="wrapper">
@@ -52,8 +48,10 @@
 						<h2 translate="summary" class="major">Summary</h3>
 							<p translate="render-sum">
 								A simple engine that uses OpenGL to render 2D sprites and animate from spritesheets.
-								It also has a side-scroller demo game (only visuals and inputs working) inspired by Xenon 2000 to show the rendering capabilities.
-								There is also a branch that handles the loading, texture mapping and rendering of 3D objects.
+								It also has a side-scroller demo game (only visuals and inputs working) inspired by
+								Xenon 2000 to show the rendering capabilities.
+								There is also a branch that handles the loading, texture mapping and rendering of 3D
+								objects.
 							</p>
 							<h2 translate="respon" class="major">Responsibilities</h2>
 							<ul>
@@ -72,15 +70,15 @@
 							</ul>
 
 							<h2 translate="source" class="major">Source Code</h2>
-							<div class="row">
-								<!-- <div class="col-3"><span class="image fit"><a href="https://fufumiga.itch.io/dicest-dungeon"
-											target="_blank"><img src="../images/itch.png" alt="" /> </a> </span>
-								</div> -->
-								<div class="col-3"><span class="image fit"><a
-											href="https://github.com/RodrigoSonego/opengl-cpp" target="_blank"><img
-												src="../images/github_avail.png" alt="" /> </a> </span>
-								</div>
-							</div>
+							<ul class="actions">
+								<li>
+									<a class="image fit" href="https://github.com/RodrigoSonego/opengl-cpp" target="_blank">
+										<img src="../images/github_avail.png" alt=""/>
+									</a>
+								</li>
+							</ul>
+
+							
 							<h2 translate="gallery" class="major">Gallery</h2>
 							<section class="features">
 								<div class="gallery-container">
@@ -103,9 +101,9 @@
 		<a href="#" class="modal-close">Close</a>
 
 		<!-- Modal Content (The Image) -->
-		 <div class="modal-content">
-			 <img id="modalImg">
-		 </div>
+		<div class="modal-content">
+			<img id="modalImg">
+		</div>
 
 		<!-- Modal Caption (unused for now) -->
 		<div id="caption"></div>

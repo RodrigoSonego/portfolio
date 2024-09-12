@@ -12,8 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="../assets/css/custom.css">
-	<link rel="preload" href="/assets/lang/en.ini" as="fetch" type="application/json" crossorigin="anonymous"/>
-	<link rel="preload" href="/assets/lang/pt.ini" as="fetch" type="application/json" crossorigin="anonymous"/>
+	<link rel="preload" href="/assets/lang/en.ini" as="fetch" type="application/json" crossorigin="anonymous" />
+	<link rel="preload" href="/assets/lang/pt.ini" as="fetch" type="application/json" crossorigin="anonymous" />
 	<noscript>
 		<link rel="stylesheet" href="../assets/css/noscript.css" />
 	</noscript>
@@ -28,21 +28,19 @@
 
 		<!-- Wrapper -->
 		<section id="wrapper">
-			<header>
+			<section id="game-banner">
 				<div class="inner">
-					<div class="row">
-						<div class="col-3">
-							<span class="image fit logo"><img src="../images/unfishing.jpg" alt="" /></span>
-						</div>
-						<div class="col-6 title-container">
-							<div class="inner title" aria-hidden="true">
-								<h2>Unfishing</h2>
-								<p translate="unfish-subtitle">"Fishing" game made for GMTK Game Jam 2023</p>
-							</div>
-						</div>
+					<span class="image"><img src="../images/unfishing.jpg" alt="" /></span>
+					<div class="content">
+						<h2 class="major">Unfishing</h2>
+						<p translate="unfish-subtitle">"Fishing" game made for GMTK Game Jam 2023</p>
 					</div>
+
+
+
+
 				</div>
-			</header>
+			</section>
 
 			<!-- Content -->
 			<div class="wrapper">
@@ -82,15 +80,21 @@
 							</ul>
 
 							<h2 translate="pub" class="major">Publishing</h2>
-							<div class="row">
-								<div class="col-3"><span class="image fit"><a href="https://fufumiga.itch.io/unfishing"
-											target="_blank"><img src="../images/itch.png" alt="" /> </a> </span>
-								</div>
-								<div class="col-3"><span class="image fit"><a
-											href="https://github.com/RodrigoSonego/unfishing" target="_blank"><img
-												src="../images/github_avail.png" alt="" /> </a> </span>
-								</div>
-							</div>
+							<ul class="actions">
+								<li>
+									<a class="image fit" href="https://fufumiga.itch.io/unfishing" target="_blank"><img
+											src="../images/itch.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a 
+										class="image fit"
+										href="https://github.com/RodrigoSonego/unfishing"
+										target="_blank"><img src="../images/github_avail.png" alt=""/>
+									</a>
+								</li>
+							</ul>
+							
 							<h2 translate="gallery" class="major">Gallery</h2>
 							<section class="features">
 								<div class="gallery-container">
@@ -105,9 +109,9 @@
 				</div>
 			</div>
 
-			
+
 		</section>
-		
+
 		<div include-html="../modules/footer.html"></div>
 	</div>
 	<!-- The Modal -->
@@ -115,15 +119,15 @@
 		<a href="#" class="modal-close">Close</a>
 
 		<!-- Modal Content (The Image) -->
-		 <div class="modal-content">
-			 <img id="modalImg">
-		 </div>
+		<div class="modal-content">
+			<img id="modalImg">
+		</div>
 
 		<!-- Modal Caption (unused for now) -->
 		<div id="caption"></div>
 	</div>
 
-	
+
 	<!-- Scripts -->
 	<script src="/assets/js/includeHtml.js"></script>
 	<script src="/assets/js/jquery.min.js"></script>

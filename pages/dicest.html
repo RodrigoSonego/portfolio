@@ -12,8 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="../assets/css/custom.css">
-	<link rel="preload" href="/assets/lang/en.ini" as="fetch" type="application/json" crossorigin="anonymous"/>
-	<link rel="preload" href="/assets/lang/pt.ini" as="fetch" type="application/json" crossorigin="anonymous"/>
+	<link rel="preload" href="/assets/lang/en.ini" as="fetch" type="application/json" crossorigin="anonymous" />
+	<link rel="preload" href="/assets/lang/pt.ini" as="fetch" type="application/json" crossorigin="anonymous" />
 	<noscript>
 		<link rel="stylesheet" href="../assets/css/noscript.css" />
 	</noscript>
@@ -28,21 +28,19 @@
 
 		<!-- Wrapper -->
 		<section id="wrapper">
-			<header>
+			<section id="game-banner">
 				<div class="inner">
-					<div class="row">
-						<div class="col-3">
-							<span class="image fit logo"><img src="../images/dicest.png" alt="" /></span>
-						</div>
-						<div class="col-6 title-container">
-							<div class="inner title" aria-hidden="true">
-								<h2>Dicest Dungeon</h2>
-								<p translate="dice-subtitle">Turn-based game for GMTK Jam 2022</p>
-							</div>
-						</div>
+
+					<span class="image"><img src="../images/dicest.png" alt="" /></span>
+
+					<div class="content">
+						<h2 class="major">Dicest Dungeon</h2>
+						<p translate="dice-subtitle">Turn-based game for GMTK Jam 2022</p>
 					</div>
+
 				</div>
-			</header>
+
+			</section>
 
 			<!-- Content -->
 			<div class="wrapper">
@@ -51,8 +49,12 @@
 					<section>
 						<h2 translate="summary" class="major">Summary</h3>
 							<p translate="dice-sum-1">
-								Dicest Dungeon is a game heavily inspired by the likes of Darkest Dungeon, where you walk through a dungeon (or, in this case, a casino) and fight monsters in turn-based battles.
-								The game has you walking through a casino in order to take down the boss. In this casino, the battles are a bet, and your only weapon is your dice (which you literally throw at your enemy)!
+								Dicest Dungeon is a game heavily inspired by the likes of Darkest Dungeon, where you
+								walk through a dungeon (or, in this case, a casino) and fight monsters in turn-based
+								battles.
+								The game has you walking through a casino in order to take down the boss. In this
+								casino, the battles are a bet, and your only weapon is your dice (which you literally
+								throw at your enemy)!
 							</p>
 							<h2 translate="respon" class="major">Responsibilities</h2>
 							<ul>
@@ -70,15 +72,19 @@
 							</ul>
 
 							<h2 translate="pub" class="major">Publishing</h2>
-							<div class="row">
-								<div class="col-3"><span class="image fit"><a href="https://fufumiga.itch.io/dicest-dungeon"
-											target="_blank"><img src="../images/itch.png" alt="" /> </a> </span>
-								</div>
-								<div class="col-3"><span class="image fit"><a
-											href="https://github.com/RodrigoSonego/dicest-dungeon" target="_blank"><img
-												src="../images/github_avail.png" alt="" /> </a> </span>
-								</div>
-							</div>
+							<ul class="actions">
+								<li>
+									<a class="image fit" href="https://fufumiga.itch.io/dicest-dungeon" target="_blank">
+										<img src="../images/itch.png" alt="" />
+									</a>
+								</li>
+								<li>
+									<a class="image fit" href="https://github.com/RodrigoSonego/dicest-dungeon" target="_blank"><img
+											src="../images/github_avail.png" alt="" />
+									</a>
+								</li>
+							</ul>
+							
 							<h2 translate="gallery" class="major">Gallery</h2>
 							<section class="features">
 								<div class="gallery-container">
@@ -101,9 +107,9 @@
 		<a href="#" class="modal-close">Close</a>
 
 		<!-- Modal Content (The Image) -->
-		 <div class="modal-content">
-			 <img id="modalImg">
-		 </div>
+		<div class="modal-content">
+			<img id="modalImg">
+		</div>
 
 		<!-- Modal Caption (unused for now) -->
 		<div id="caption"></div>
