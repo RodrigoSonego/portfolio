@@ -4,127 +4,152 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 	-->
-	<html>
-		<head>
-			<title>Rodrigo Sônego</title>
-			<meta charset="utf-8" />
-			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-			<link rel="stylesheet" href="assets/css/main.css" />
-			<link rel="stylesheet" href="assets/css/custom.css"/>
-			<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-			<link rel="preload" href="/assets/lang/en.ini" as="fetch" type="application/json" crossorigin="anonymous"/>
-			<link rel="preload" href="/assets/lang/pt.ini" as="fetch" type="application/json" crossorigin="anonymous"/>
-		</head>
-		<body class="is-preload">
-			<!-- Page Wrapper -->
-			<div id="page-wrapper">
+<html>
 
-				<div include-html="modules/header.html"></div>
+<head>
+	<title>Rodrigo Sônego</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="preload" href="/assets/lang/en.ini" as="fetch" type="application/json" crossorigin="anonymous" />
+	<link rel="preload" href="/assets/lang/pt.ini" as="fetch" type="application/json" crossorigin="anonymous" />
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z92Y3N3KJF"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-								<a href="#" class="image"><img src="images/euai.jpg" alt="" /></a>
-							<h2 translate="header-title">Hello! I'm Rodrigo Sônego</h2>
-							<p translate="header-desc">I'm a game developer with experience in the Unity Engine.
-								I have worked in the industry since 2021 and took part in a few game jams and personal projects. Check out my work below!
-							</p>
-						</div>
-					</section>
+		gtag('config', 'G-Z92Y3N3KJF');
+	</script>
+</head>
 
-				<!-- Wrapper -->
-					<section id="wrapper">
+<body class="is-preload">
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
 
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="pages/science.html" class="image"><img src="images/LogoCiencias.png" alt="" /></a>
-									<div class="content">
-										<h2 class="major" translate="science-title">AR Science</h2>
-										<p translate="science-desc">
-											AR Science is an Augmented Reality mobile app that is used in tandem with a science textbook to illustrate various 3D scenes that
-											auxiliate the learning of students in middle school. The user points their phone camera at an "AR Code" and the 3D visualization
-											appears. Published on Android and IoS along with four other similar apps that tackles different contents.
-										</p>
-										<a translate="learn" href="pages/science.html" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+		<div include-html="modules/header.html"></div>
 
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="/pages/unfishing.html" class="image"><img src="images/unfishing.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Unfishing</h2>
-										<p translate="unfishing">
-											Game made for the GMTK Game Jam 2023, with the theme "Roles Reversed". In this game, you play as a fish trying to 
-											"unfish" food from the hooks peeking underwater. Just as fishing mechanics in other games, you have to solve minigames in order to
-											unfish the worms from the hooks, bringing them home to feed your family!
-										</p>
-										<a translate="learn" href="/pages/unfishing.html" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<a href="#" class="image"><img src="images/euai.jpg" alt="" /></a>
+				<h2 translate="header-title">Hello! I'm Rodrigo Sônego</h2>
+				<p translate="header-desc">I'm a game developer with experience in the Unity Engine.
+					I have worked in the industry since 2021 and took part in a few game jams and personal projects.
+					Check out my work below!
+				</p>
+			</div>
+		</section>
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="/pages/dicest.html" class="image"><img src="images/dicest.png" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Dicest Dungeon</h2>
-										<p translate="dicest">Game made for the GMTK Game Jam 2022, with the theme "Roll of the Dice". This game is heavily inspired by the likes of
-											Darkest Dungeon, with a similar combat structure. The setting is a casino in which you attack your enemies by throwing dice
-											at them, and the damage will be the roll result!
-										</p>
-										<a translate="learn" href="/pages/dicest.html" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
+		<!-- Wrapper -->
+		<section id="wrapper">
 
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 translate="other" class="major">Other Projects</h2>
-									<!-- <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p> -->
-									<section class="features">
-										<article>
-											<a href="/pages/fighting-rl.html" class="image"><img src="images/rl.png" alt="" /></a>
-											<h3 class="major">Fighting Game Reinforcement Learning</h3>
-											<p translate="fg-desc">Fighting Game prototype made in Unity. Uses python to implement the Deep Q-Learning algorithm to make the AI learn the optimal way to play against its opponent.</p>
-											<a translate="learn" href="/pages/fighting-rl.html" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="/pages/render.html" class="image"><img src="/images/render.png" alt="" /></a>
-											<h3 translate="render-title" class="major">C++ Render Engine</h3>
-											<p  translate="render-desc">Engine made in C++ that renders 3D models, textures, 2D sprites and animations on spritesheets.</p>
-											<a  translate="learn" href="/pages/render.html" class="special">Learn more</a>
-										</article>
-										<!-- <article>
+			<!-- One -->
+			<section id="one" class="wrapper spotlight style1">
+				<div class="inner">
+					<a href="pages/science.html" class="image"><img src="images/LogoCiencias.png" alt="" /></a>
+					<div class="content">
+						<h2 class="major" translate="science-title">AR Science</h2>
+						<p translate="science-desc">
+							AR Science is an Augmented Reality mobile app that is used in tandem with a science textbook
+							to illustrate various 3D scenes that
+							auxiliate the learning of students in middle school. The user points their phone camera at
+							an "AR Code" and the 3D visualization
+							appears. Published on Android and IoS along with four other similar apps that tackles
+							different contents.
+						</p>
+						<a translate="learn" href="pages/science.html" class="special">Learn more</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Two -->
+			<section id="two" class="wrapper alt spotlight style2">
+				<div class="inner">
+					<a href="/pages/unfishing.html" class="image"><img src="images/unfishing.jpg" alt="" /></a>
+					<div class="content">
+						<h2 class="major">Unfishing</h2>
+						<p translate="unfishing">
+							Game made for the GMTK Game Jam 2023, with the theme "Roles Reversed". In this game, you
+							play as a fish trying to
+							"unfish" food from the hooks peeking underwater. Just as fishing mechanics in other games,
+							you have to solve minigames in order to
+							unfish the worms from the hooks, bringing them home to feed your family!
+						</p>
+						<a translate="learn" href="/pages/unfishing.html" class="special">Learn more</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Three -->
+			<section id="three" class="wrapper spotlight style3">
+				<div class="inner">
+					<a href="/pages/dicest.html" class="image"><img src="images/dicest.png" alt="" /></a>
+					<div class="content">
+						<h2 class="major">Dicest Dungeon</h2>
+						<p translate="dicest">Game made for the GMTK Game Jam 2022, with the theme "Roll of the Dice".
+							This game is heavily inspired by the likes of
+							Darkest Dungeon, with a similar combat structure. The setting is a casino in which you
+							attack your enemies by throwing dice
+							at them, and the damage will be the roll result!
+						</p>
+						<a translate="learn" href="/pages/dicest.html" class="special">Learn more</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Four -->
+			<section id="four" class="wrapper alt style1">
+				<div class="inner">
+					<h2 translate="other" class="major">Other Projects</h2>
+					<!-- <p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p> -->
+					<section class="features">
+						<article>
+							<a href="/pages/fighting-rl.html" class="image"><img src="images/rl.png" alt="" /></a>
+							<h3 class="major">Fighting Game Reinforcement Learning</h3>
+							<p translate="fg-desc">Fighting Game prototype made in Unity. Uses python to implement the
+								Deep Q-Learning algorithm to make the AI learn the optimal way to play against its
+								opponent.</p>
+							<a translate="learn" href="/pages/fighting-rl.html" class="special">Learn more</a>
+						</article>
+						<article>
+							<a href="/pages/render.html" class="image"><img src="/images/render.png" alt="" /></a>
+							<h3 translate="render-title" class="major">C++ Render Engine</h3>
+							<p translate="render-desc">Engine made in C++ that renders 3D models, textures, 2D sprites
+								and animations on spritesheets.</p>
+							<a translate="learn" href="/pages/render.html" class="special">Learn more</a>
+						</article>
+						<!-- <article>
 											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
 											<h3 class="major">Prism</h3>
 											<p>Puzzle game where you have to use to use reflections to direct a laser to its goal.</p>
 											<a href="#" class="special">Learn more</a>
 										</article> -->
-									</section>
-								</div>
-							</section>
-
 					</section>
+				</div>
+			</section>
 
-				<div include-html="modules/footer.html"></div>
+		</section>
 
-			</div>
+		<div include-html="modules/footer.html"></div>
 
-		<!-- Scripts -->
-			<script src="assets/js/includeHtml.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script type="module" src="assets/js/langHandler.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</div>
 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/includeHtml.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script type="module" src="assets/js/langHandler.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
