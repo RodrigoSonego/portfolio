@@ -17,6 +17,7 @@
 	<noscript>
 		<link rel="stylesheet" href="../assets/css/noscript.css" />
 	</noscript>
+	<link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/themes/splide-skyblue.min.css" />
 </head>
 
 <body class="is-preload">
@@ -50,20 +51,28 @@
 					<section>
 						<h2 translate="summary" class="major">Summary</h3>
 							<p translate="portal-sum-1">
-								This is a prototype/proof of concept made to study and try to replicate the portal mechanics from Portal.
-								A number of iterations were done to figure out the best way to render the view of the portal, along with the portal camera movement.
-								I landed on using a series of matrix multiplications to determine the position of the camera, and, for the render, 
-								mapping the uv coordinates of the portal mesh (a quad) in screen space to then crop the portal camera view. 
+								This is a prototype/proof of concept made to study and try to replicate the portal
+								mechanics from Portal.
+								A number of iterations were done to figure out the best way to render the view of the
+								portal, along with the portal camera movement.
+								I landed on using a series of matrix multiplications to determine the position of the
+								camera, and, for the render,
+								mapping the uv coordinates of the portal mesh (a quad) in screen space to then crop the
+								portal camera view.
 							</p>
 							<p translate="portal-sum-2">
-								This project taught me a lot about camera spaces, coordinate transformation, shaders, camera manipulation, and Unity's Universal Render Pipeline
+								This project taught me a lot about camera spaces, coordinate transformation, shaders,
+								camera manipulation, and Unity's Universal Render Pipeline
 							</p>
 							<h2 translate="respon" class="major">Responsibilities</h2>
 							<ul>
-								<li translate="respon-clip">Developing shader to clip the camera view to match the quad's UVs</li>
-								<li translate="respon-matrix">Figuring the matrix math logic needed to move the opposite portal camera relative to player's position.</li>
+								<li translate="respon-clip">Developing shader to clip the camera view to match the
+									quad's UVs</li>
+								<li translate="respon-matrix">Figuring the matrix math logic needed to move the opposite
+									portal camera relative to player's position.</li>
 								<li translate="respon-recurs">Developing the logic to render portals recursively.</li>
-								<li translate="respon-placement">Developing the portal placement system and a system to fix its position when meeting a wall overhang or intersection.</li>
+								<li translate="respon-placement">Developing the portal placement system and a system to
+									fix its position when meeting a wall overhang or intersection.</li>
 								<li translate="respon-bug">Bug Fixing</li>
 								<li translate="respon-opt">Optimization</li>
 							</ul>
@@ -78,14 +87,15 @@
 							<h2 translate="source" class="major">Source Code</h2>
 							<ul class="actions">
 								<li>
-									<a class="image fit" href="https://github.com/RodrigoSonego/portal-clone" target="_blank">
+									<a class="image fit" href="https://github.com/RodrigoSonego/portal-clone"
+										target="_blank">
 										<img src="../images/github_avail.png" alt="" />
 									</a>
 								</li>
 							</ul>
 
 							<h2 translate="gallery" class="major">Gallery</h2>
-							<section class="features">
+							<!-- <section class="features">
 								<div class="gallery-container">
 									<img class="image gallery" src="/images/portal/portal1.png">
 									<img class="image gallery" src="/images/portal/portal2.png">
@@ -93,6 +103,16 @@
 									<img class="image gallery" src="/images/portal/portal4.png">
 								</div>
 
+							</section> -->
+							<section class="splide">
+								<div class="splide__track">
+									<ul class="splide__list">
+										<li class="splide__slide"><img class="gallery" src="/images/portal/portal1.png"></li>
+										<li class="splide__slide"><img class="gallery" src="/images/portal/portal2.png"></li>
+										<li class="splide__slide"><img class="gallery" src="/images/portal/portal3.png"></li>
+										<li class="splide__slide"><img class="gallery" src="/images/portal/portal4.png"></li>
+									</ul>
+								</div>
 							</section>
 					</section>
 				</div>
@@ -106,8 +126,7 @@
 		<a href="#" class="modal-close">Close</a>
 
 		<!-- Modal Content (The Image) -->
-		<div class="modal-content">
-			<img id="modalImg">
+		<div class="modal-content" id="modalContent">
 		</div>
 
 		<!-- Modal Caption (unused for now) -->
@@ -123,6 +142,11 @@
 	<script src="../assets/js/breakpoints.min.js"></script>
 	<script src="../assets/js/util.js"></script>
 	<script src="../assets/js/main.js"></script>
+	<script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+	<script>
+		new Splide( '.splide' ).mount();
+		</script>
+	
 	<script src="/assets/js/modalImage.js"></script>
 	<script> setupGalleryModal(); </script>
 
