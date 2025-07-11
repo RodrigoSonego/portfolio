@@ -1,23 +1,25 @@
 function setupGalleryModal() {
     // Get the modal
-    let modal = document.getElementById("modal");
+    const modal = document.getElementById("modal");
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    let modalImg = document.getElementById("modalImg");
     // var captionText = document.getElementById("caption");
 
-    let imgs = document.getElementsByClassName("gallery");
+    const imgs = document.getElementsByClassName("gallery");
 
-    let modalContent = document.getElementById("modalContent");
+    const modalContent = document.getElementById("modalContent");
 
     generateModalCarousel(modalContent, imgs)
 
     const splide = new Splide('#modalSplide', {
         type: 'fade',
-        rewind: true
+        rewind: true,
+        video : {
+            loop    : true,
+            autoplay: true
+        }
     });
     
-    splide.mount();
+    splide.mount( window.splide.Extensions );
 
     for (let index = 0; index < imgs.length; index++) {
         imgs[index].onclick = function () {
@@ -45,14 +47,14 @@ function setupGalleryModal() {
         splide.destroy = true;
     }
 
-    // modal.onclick = function (event) {
-    //     event.stopPropagation();
+    modal.onclick = function (event) {
+        event.stopPropagation();
 
-    //     modal.style.display = "none";
-    //     document.body.className -= " blur";
+        modal.style.display = "none";
+        document.body.className -= " blur";
 
-    //     splide.destroy = true;
-    // }
+        splide.destroy = true;
+    }
 }
 
 /**
@@ -74,15 +76,20 @@ function generateModalCarousel(modalContent, imgs){
         const slide = document.createElement('li');
         slide.className = 'splide__slide';
 
+        const imgParent = img.parentElement;
+        if (imgParent.hasAttribute("data-splide-youtube")){
+            slide.setAttribute('data-splide-youtube', imgParent.getAttribute("data-splide-youtube"));
+        }
+
         const slideImg = img.cloneNode(true);
         slideImg.removeAttribute("class");
 
-        // slideImg.onclick = function (event) {
-        //     event.stopPropagation();
-        // }
-
         slide.append(slideImg);
         list.append(slide);
+    }
+
+    modalContent.onclick = function (event) {
+        event.stopPropagation();
     }
 
     splideTrack.append(list);
