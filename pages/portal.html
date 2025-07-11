@@ -18,6 +18,8 @@
 		<link rel="stylesheet" href="../assets/css/noscript.css" />
 	</noscript>
 	<link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/themes/splide-skyblue.min.css" />
+	<link rel="stylesheet"
+		href="/node_modules/@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css">
 </head>
 
 <body class="is-preload">
@@ -107,10 +109,16 @@
 							<section class="splide">
 								<div class="splide__track">
 									<ul class="splide__list">
-										<li class="splide__slide"><img class="gallery" src="/images/portal/portal1.png"></li>
-										<li class="splide__slide"><img class="gallery" src="/images/portal/portal2.png"></li>
-										<li class="splide__slide"><img class="gallery" src="/images/portal/portal3.png"></li>
-										<li class="splide__slide"><img class="gallery" src="/images/portal/portal4.png"></li>
+										<li class="splide__slide"><img class="gallery" src="/images/portal/portal1.png">
+										</li>
+										<li class="splide__slide"><img class="gallery" src="/images/portal/portal2.png">
+										</li>
+										<li class="splide__slide"
+											data-splide-youtube="https://www.youtube.com/watch?v=aa3X_4ds38M">
+											<img class="gallery" src="/images/portal/portal3.png">
+										</li>
+										<li class="splide__slide"><img class="gallery" src="/images/portal/portal4.png">
+										</li>
 									</ul>
 								</div>
 							</section>
@@ -143,10 +151,18 @@
 	<script src="../assets/js/util.js"></script>
 	<script src="../assets/js/main.js"></script>
 	<script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+	<script src="/node_modules/@splidejs/splide-extension-video/dist/js/splide-extension-video.min.js"></script>
 	<script>
-		new Splide( '.splide' ).mount();
-		</script>
-	
+		document.addEventListener("DOMContentLoaded", function () {
+			new Splide('.splide', {
+				rewind: true,
+				video: {
+					loop: true,
+					autoplay: true,
+				}
+			}).mount(window.splide.Extensions);
+		});
+	</script>
 	<script src="/assets/js/modalImage.js"></script>
 	<script> setupGalleryModal(); </script>
 
