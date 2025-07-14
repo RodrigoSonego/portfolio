@@ -17,6 +17,7 @@
 	<noscript>
 		<link rel="stylesheet" href="../assets/css/noscript.css" />
 	</noscript>
+	<link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/themes/splide-skyblue.min.css" />
 </head>
 
 <body class="is-preload">
@@ -35,10 +36,6 @@
 						<h2 class="major">Unfishing</h2>
 						<p translate="unfish-subtitle">"Fishing" game made for GMTK Game Jam 2023</p>
 					</div>
-
-
-
-
 				</div>
 			</section>
 
@@ -96,7 +93,7 @@
 							</ul>
 							
 							<h2 translate="gallery" class="major">Gallery</h2>
-							<section class="features">
+							<!-- <section class="features">
 								<div class="gallery-container">
 									<img class="image gallery" src="/images/unfishing/print_2.png">
 									<img class="image gallery" src="/images/unfishing/print_3.png">
@@ -104,6 +101,16 @@
 									<img class="image gallery" src="/images/unfishing/print_5.png">
 								</div>
 
+							</section> -->
+							<section class="splide">
+								<div class="splide__track">
+									<ul class="splide__list">
+										<li class="splide__slide"><img class="gallery" src="/images/unfishing/print_2.png"></li>
+										<li class="splide__slide"><img class="gallery" src="/images/unfishing/print_3.png"></li>
+										<li class="splide__slide"><img class="gallery" src="/images/unfishing/print_4.png"></li>
+										<li class="splide__slide"><img class="gallery" src="/images/unfishing/print_5.png"></li>
+									</ul>
+								</div>
 							</section>
 					</section>
 				</div>
@@ -119,7 +126,7 @@
 		<a href="#" class="modal-close">Close</a>
 
 		<!-- Modal Content (The Image) -->
-		<div class="modal-content">
+		<div class="modal-content" id="modalContent">
 			<img id="modalImg">
 		</div>
 
@@ -137,6 +144,19 @@
 	<script src="/assets/js/breakpoints.min.js"></script>
 	<script src="/assets/js/util.js"></script>
 	<script src="/assets/js/main.js"></script>
+	<script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+	<script src="/node_modules/@splidejs/splide-extension-video/dist/js/splide-extension-video.min.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			new Splide('.splide', {
+				rewind: true,
+				video: {
+					loop: true,
+					autoplay: true,
+				}
+			}).mount(window.splide.Extensions);
+		});
+	</script>
 	<script src="/assets/js/modalImage.js"></script>
 	<script> setupGalleryModal(); </script>
 
