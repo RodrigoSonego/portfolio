@@ -32,8 +32,10 @@ iframe.video {
 }
 
 .gallery {
-    margin: 0.4%;
-    width: 48%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
     aspect-ratio: 16 / 9;
 }
 
@@ -101,13 +103,46 @@ iframe.video {
 
 /* Modal Content (Image) */
 .modal-content {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .modal-content img {
     /* vertical-align: middle; */
-    width: 100%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
+}
+
+@media screen and (max-width: 1280px) {
+    .modal-content {
+    max-width: 95%;
+}
+
+.modal-content img {
+    /* vertical-align: middle; */
+    width: 90%;
+}
+}
+
+@media screen and (max-width: 980px) { 
+    .modal-content {
+        max-width: 95%;
+    }
+
+    .modal-content img {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+
+    .modal-content img {
+        width: 95%;
+    }
 }
 
 /* The Close Button */
@@ -127,6 +162,8 @@ iframe.video {
     text-indent: 4em;
     top: 0;
     width: 4em;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .close:hover {
@@ -139,22 +176,15 @@ iframe.video {
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-}
-
 .hide {
     display: none;
 }
 
 body.blur #page-wrapper {
-    -moz-filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
+    -moz-filter: blur(6px);
+    -webkit-filter: blur(6px);
+    -ms-filter: blur(6px);
+    filter: blur(6px);
 }
 
 body.blur {
